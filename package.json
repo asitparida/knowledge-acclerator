@@ -1,0 +1,19 @@
+{
+  "name": "knowledge-acclerator",
+  "version": "1.0.0",
+  "description": "![](http://image.prntscr.com/image/762fac151662412b9fa870126b72669a.png)",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/styles/style.scss:style.css & lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asitparida/knowledge-acclerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asitparida/knowledge-acclerator/issues"
+  },
+  "homepage": "https://github.com/asitparida/knowledge-acclerator#readme"
+}

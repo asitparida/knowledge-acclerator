@@ -4,10 +4,20 @@
 
 
 .hero-area{
-    background: linear-gradient(dodgerblue,#0070DF);
+    background: linear-gradient(to bottom, dodgerblue 10%, #0070DF);
     text-align: left;
-    
-    min-height: 60vh;
+    overflow: hidden;
+    padding-top: 60px;
+    min-height: 500px;
+
+    &.home-hero {
+        .hero-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+    }
     
     @include media-width(650){ min-height: 40vh }
     
@@ -21,18 +31,21 @@
     .hero-image {
         z-index: 1;
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 110%;
+        height: 110%;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        top: -5%;
+        lefT: -5%;
+        filter: blur(2px);
         &:after {
             content: '';
             z-index: 2;
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image:  linear-gradient( to top, rgba(darken(dodgerblue, 25), 0.60), rgba(0,0,0,0.20));
+            background-image:  linear-gradient( to top, rgba(darken(dodgerblue, 25), 0.90), rgba(0,0,0,0.20));
         }
     }
     .hero-content{

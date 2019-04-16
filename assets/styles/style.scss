@@ -68,7 +68,9 @@
  * ---------------------------------------------------
  */
 /* --------------------- 4.1 Home page --------------------- */ 
+@import 'pages/navs';
 @import 'pages/home';
+@import 'pages/content';
 
 /**
  * ---------------------------------------------------
@@ -77,3 +79,24 @@
  */
 /* --------------------- 5.1 Default Theme --------------------- */ 
 @import 'themes/default';
+
+@mixin scrollbars($size, $foreground-color, $background-color) {
+	::-webkit-scrollbar {
+	   width: $size;
+	   height: $size;
+   }
+	::-webkit-scrollbar-thumb {
+	   background: $foreground-color;
+   }
+	::-webkit-scrollbar-track {
+	   background: $background-color;
+   } // For Internet Explorer
+   .app-nav {
+	   -ms-scrollbar-face-color: $foreground-color;
+	   scrollbar-face-color: $foreground-color;
+	   -ms-scrollbar-track-color: $background-color;
+	   scrollbar-track-color: $background-color;
+   }
+  }
+
+@include scrollbars(0.75em, #d0d0d0, #f0f0f0);

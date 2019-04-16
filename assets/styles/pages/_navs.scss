@@ -1,0 +1,33 @@
+.navigation-bar-container {
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: dodgerblue;
+    .navigation-bar {
+        white-space: nowrap;
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+        padding: 0;
+        margin-bottom: 0;
+        .navigation-bar-item {
+            padding: 0 15px;
+            height: 48px;
+            line-height: 48px;
+            min-width: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f1f8ff;
+            a {
+                color: #f1f8ff;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}

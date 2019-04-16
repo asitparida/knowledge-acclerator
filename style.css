@@ -2594,13 +2594,21 @@ ul.linear-list li {
  */
 /* --------------------- 2.1 Header --------------------- */
 .hero-area {
-  background: linear-gradient(dodgerblue, #0070DF);
+  background: linear-gradient(to bottom, dodgerblue 10%, #0070DF);
   text-align: left;
-  min-height: 60vh;
+  overflow: hidden;
+  padding-top: 60px;
+  min-height: 500px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
+}
+.hero-area.home-hero .hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 @media all and (max-width: 650px) {
   .hero-area {
@@ -2614,11 +2622,14 @@ ul.linear-list li {
 .hero-area .hero-image {
   z-index: 1;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  top: -5%;
+  lefT: -5%;
+  filter: blur(2px);
 }
 .hero-area .hero-image:after {
   content: "";
@@ -2626,7 +2637,7 @@ ul.linear-list li {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 80, 158, 0.6), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to top, rgba(0, 80, 158, 0.9), rgba(0, 0, 0, 0.2));
 }
 .hero-area .hero-content {
   position: relative;
@@ -2741,6 +2752,118 @@ ul.linear-list li {
  * ---------------------------------------------------
  */
 /* --------------------- 4.1 Home page --------------------- */
+.navigation-bar-container {
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: dodgerblue;
+}
+.navigation-bar-container .navigation-bar {
+  white-space: nowrap;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  margin-bottom: 0;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-item {
+  padding: 0 15px;
+  height: 48px;
+  line-height: 48px;
+  min-width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1f8ff;
+}
+.navigation-bar-container .navigation-bar .navigation-bar-item a {
+  color: #f1f8ff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  background: #67a8fd;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo .logo-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/images/owl_logo.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 17px 23px;
+}
+
+.home-sprint {
+  min-height: 500px;
+  display: flex;
+}
+.home-sprint:nth-of-type(2n + 2) {
+  background-color: #f1f8ff;
+}
+.home-sprint:nth-of-type(2n + 2) .container .content.left {
+  order: 1;
+}
+.home-sprint:nth-of-type(2n + 2) .container .content.right {
+  order: 2;
+}
+.home-sprint .container {
+  padding: 6em 0;
+  display: flex;
+}
+.home-sprint .container .content {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+}
+.home-sprint .container .content.left {
+  order: 2;
+}
+.home-sprint .container .content.right {
+  order: 1;
+}
+.home-sprint .container .content h2 {
+  font-size: 3em;
+}
+.home-sprint .container .content h2 span {
+  font-size: x-large;
+  color: dodgerblue;
+  padding: 0 0 1em 0;
+  display: block;
+  margin-right: 0px;
+}
+.home-sprint .container .content p {
+  font-size: 1.35em;
+  line-height: 1.75em;
+  margin: 0em 0 2em 0;
+}
+.home-sprint .container .content a {
+  display: inline-block;
+  line-height: 48px;
+  padding: 0 15px;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.home-sprint .container .content a:hover {
+  background: dodgerblue;
+  color: #fff;
+}
+
 .sprint-section {
   padding: 6em 0;
 }
@@ -2767,7 +2890,7 @@ ul.linear-list li {
 }
 .sprint-section p {
   font-size: 1.35em;
-  line-height: 1.5em;
+  line-height: 1.75em;
   margin: 1.5em 0;
 }
 .sprint-section blockquote {
@@ -2784,5 +2907,24 @@ ul.linear-list li {
  * ---------------------------------------------------
  */
 /* --------------------- 5.1 Default Theme --------------------- */
+::-webkit-scrollbar {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.app-nav {
+  -ms-scrollbar-face-color: #d0d0d0;
+  scrollbar-face-color: #d0d0d0;
+  -ms-scrollbar-track-color: #f0f0f0;
+  scrollbar-track-color: #f0f0f0;
+}
 
 /*# sourceMappingURL=style.css.map */
