@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    background-color: dodgerblue;
+    background-color: #f1f8ff;
     &.is-hidden {
         transform: translateY(0);
         animation: slide-out-of-view 0.5s ease 0s forwards;
@@ -25,12 +25,12 @@
         margin-bottom: 0;
         .navigation-bar-item {
             padding: 0 15px;
-            height: 48px;
-            line-height: 48px;
+            height: 60px;
+            line-height: 60px;
             min-width: 100px;
             text-align: center;
             text-transform: uppercase;
-            color: #f1f8ff;
+            color: #000;
             border-bottom: 3px solid rgba(0, 0,0,0.0);
             cursor: pointer;
             opacity: 0.75;
@@ -38,11 +38,11 @@
             &:focus,
             &:hover {
                 opacity: 1;
-                border-bottom: 3px solid rgba(255, 255,255,0.75);
+                border-bottom: 3px solid rgba(0, 0,0,0.50);
             }
             a {
                 cursor: pointer;
-                color: #f1f8ff;
+                color: #000;
                 text-transform: uppercase;
                 text-decoration: none;
             }
