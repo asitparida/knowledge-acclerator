@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="assets/plugins/Modernizr/modernizr-2.8.3.min.js"></script>
     <style>
+            .hero-area:not(.auto-height).landing-top {
+                min-height: 60vh;
+            }
+            .home-sprint.landing-bottom {
+                min-height: 40vh;
+            }
+            .home-sprint.home-sprint.landing-bottom .container .content p {
+                margin-bottom: 0;
+            }
             .hero-area .hero-image {
                 background-image: url(assets/images/kickoff/DSC05123-min.jpg);
                 background-attachment: fixed;
@@ -42,7 +51,7 @@
             <li class="navigation-bar-item">Contact Us</li>
         </ul>
     </div>
-    <header class="hero-area home-hero">
+    <header class="hero-area home-hero landing-top">
         <div class="hero-image"></div>
         <div class="hero-content container">
             <div class="logo">
@@ -50,7 +59,7 @@
             </div>
         </div>
     </header>
-    <section class="home-sprint auto-height">
+    <section class="home-sprint auto-height landing-bottom">
         <div class="container">
             <div class="content centered">
                     <h1>Knowledge Accelerator</h1>
