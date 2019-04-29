@@ -19,49 +19,108 @@
         background-position: 17px 23px;
     }
 }
+
 .home-sprint {
     &:not(.auto-height) {
         min-height: 500px;
     }
+
     display: flex;
+
     &:nth-of-type(2n + 2) {
         background-color: #f1f8ff;
     }
+
     .container {
         padding: 6em 0;
         display: flex;
+
         &.normal {
-            .content {
-                &.left {
-                    padding-left: 30px;
-                    order: 2;
-                    align-items: flex-start;
-                }
-                &.right {
-                    padding-right: 30px;
-                    order: 1;
-                    align-items: flex-end;
-                }
-            }
-        }
-        &.inverted {
-            .content {
-                &.left {
-                    padding-right: 30px;
-                    order: 1;
-                    align-items: flex-end;
-                    h2,
-                    h2 span {
-                        text-align: right;
+            @include respond-to-mobile {
+                flex-flow: column;
+
+                .content {
+                    &.left {
+                        padding: 0 30px;
+                        order: 2;
+                        align-items: center;
+                    }
+
+                    &.right {
+                        padding: 0 30px;
+                        order: 1;
+                        align-items: center;
+                    }
+                    h2, 
+                    h2 span,
+                    p  {
+                        text-align: center;
                     }
                 }
-                &.right {
-                    padding-left: 30px;
-                    order: 2;
-                    align-items: flex-start;
+            }
+
+            @include respond-to-except-mobile {
+                .content {
+                    &.left {
+                        padding-left: 30px;
+                        order: 2;
+                        align-items: flex-start;
+                    }
+
+                    &.right {
+                        padding-right: 30px;
+                        order: 1;
+                        align-items: flex-end;
+                    }
                 }
             }
         }
+
+        &.inverted {
+            @include respond-to-mobile {
+                flex-flow: column;
+                .content {
+                    &.left {
+                        padding: 0 30px;
+                        order: 2;
+                        align-items: center;
+                    }
+
+                    &.right {
+                        padding: 0 30px;
+                        order: 1;
+                        align-items: center;
+                    }
+                    h2, 
+                    h2 span,
+                    p  {
+                        text-align: center;
+                    }
+                }
+            }
+
+            @include respond-to-except-mobile {
+                .content {
+                    &.left {
+                        padding-right: 30px;
+                        order: 1;
+                        align-items: flex-end;
+
+                        h2,
+                        h2 span {
+                            text-align: right;
+                        }
+                    }
+
+                    &.right {
+                        padding-left: 30px;
+                        order: 2;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+
         .content {
             flex: 1;
             width: 50%;
@@ -69,19 +128,32 @@
             align-items: flex-start;
             justify-content: center;
             flex-flow: column;
+
+            @include respond-to-mobile {
+                width: 100%;
+            }
+
             &.centered {
                 align-items: center;
+                text-align: center;
             }
+
             .featured-image-container {
                 padding: 0;
+
                 img {
                     box-shadow: 0px 4px 32px rgba(dodgerblue, 0.50);
                     border-radius: 10px;
-                    height: 250px;
+                    max-height: 250px;
+                    @include respond-to-except-mobile {
+                        height: 250px;
+                    }
                 }
             }
+
             h2 {
                 font-size: 3em;
+
                 span {
                     font-size: x-large;
                     color: dodgerblue;
@@ -90,11 +162,13 @@
                     margin-right: 0px;
                 }
             }
+
             p {
                 font-size: 1.35em;
                 line-height: 1.75em;
                 margin: 0em 0 2em 0;
             }
+
             a {
                 display: inline-block;
                 line-height: 48px;
@@ -104,6 +178,7 @@
                 font-weight: bold;
                 text-decoration: none;
                 transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+
                 &:hover {
                     background: dodgerblue;
                     color: #fff;

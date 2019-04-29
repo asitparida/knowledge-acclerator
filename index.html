@@ -18,8 +18,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="assets/plugins/Modernizr/modernizr-2.8.3.min.js"></script>
     <style>
-        .hero-area:not(.auto-height).landing-top {
-            min-height: 60vh;
+        @media only screen and (max-width: 768px) {
+            .hero-area:not(.auto-height).landing-top {
+                min-height: 33vh;
+            }
+        }
+        @media only screen and (min-width: 769px) {
+            .hero-area:not(.auto-height).landing-top {
+                min-height: 60vh;
+            }
+            .hero-area .hero-image {
+                background-attachment: fixed;
+            }
         }
 
         .home-sprint.landing-bottom {
@@ -32,7 +42,6 @@
 
         .hero-area .hero-image {
             background-image: url(assets/images/kickoff/DSC05123-min.jpg);
-            background-attachment: fixed;
             background-position: bottom;
         }
 

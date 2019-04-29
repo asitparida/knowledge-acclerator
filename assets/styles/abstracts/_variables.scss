@@ -5,10 +5,19 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Open Sans',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
 
 
 // Base colors
@@ -22,7 +31,9 @@ $a-color: #337ab7; // links color
 // Font sizes
 $base-font-size: 14px;
 
-$font-roboto: 'Miriam Libre', 'Open Sans', sans-serif;
+$font-roboto: 'Miriam Libre',
+'Open Sans',
+sans-serif;
 
 
 
@@ -57,3 +68,16 @@ $images-dir: 'assets/images/' !default;
 $plugins-dir: 'assets/images/' !default;
 
 $primary-accent: #67a8fd;
+
+
+@mixin respond-to-mobile {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin respond-to-except-mobile {
+    @media only screen and (min-width: 769px) {
+        @content;
+    }
+}

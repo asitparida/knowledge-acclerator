@@ -2855,29 +2855,73 @@ ul.linear-list li {
   padding: 6em 0;
   display: flex;
 }
-.home-sprint .container.normal .content.left {
-  padding-left: 30px;
-  order: 2;
-  align-items: flex-start;
+@media only screen and (max-width: 768px) {
+  .home-sprint .container.normal {
+    flex-flow: column;
+  }
+  .home-sprint .container.normal .content.left {
+    padding: 0 30px;
+    order: 2;
+    align-items: center;
+  }
+  .home-sprint .container.normal .content.right {
+    padding: 0 30px;
+    order: 1;
+    align-items: center;
+  }
+  .home-sprint .container.normal .content h2,
+.home-sprint .container.normal .content h2 span,
+.home-sprint .container.normal .content p {
+    text-align: center;
+  }
 }
-.home-sprint .container.normal .content.right {
-  padding-right: 30px;
-  order: 1;
-  align-items: flex-end;
+@media only screen and (min-width: 769px) {
+  .home-sprint .container.normal .content.left {
+    padding-left: 30px;
+    order: 2;
+    align-items: flex-start;
+  }
+  .home-sprint .container.normal .content.right {
+    padding-right: 30px;
+    order: 1;
+    align-items: flex-end;
+  }
 }
-.home-sprint .container.inverted .content.left {
-  padding-right: 30px;
-  order: 1;
-  align-items: flex-end;
+@media only screen and (max-width: 768px) {
+  .home-sprint .container.inverted {
+    flex-flow: column;
+  }
+  .home-sprint .container.inverted .content.left {
+    padding: 0 30px;
+    order: 2;
+    align-items: center;
+  }
+  .home-sprint .container.inverted .content.right {
+    padding: 0 30px;
+    order: 1;
+    align-items: center;
+  }
+  .home-sprint .container.inverted .content h2,
+.home-sprint .container.inverted .content h2 span,
+.home-sprint .container.inverted .content p {
+    text-align: center;
+  }
 }
-.home-sprint .container.inverted .content.left h2,
+@media only screen and (min-width: 769px) {
+  .home-sprint .container.inverted .content.left {
+    padding-right: 30px;
+    order: 1;
+    align-items: flex-end;
+  }
+  .home-sprint .container.inverted .content.left h2,
 .home-sprint .container.inverted .content.left h2 span {
-  text-align: right;
-}
-.home-sprint .container.inverted .content.right {
-  padding-left: 30px;
-  order: 2;
-  align-items: flex-start;
+    text-align: right;
+  }
+  .home-sprint .container.inverted .content.right {
+    padding-left: 30px;
+    order: 2;
+    align-items: flex-start;
+  }
 }
 .home-sprint .container .content {
   flex: 1;
@@ -2887,8 +2931,14 @@ ul.linear-list li {
   justify-content: center;
   flex-flow: column;
 }
+@media only screen and (max-width: 768px) {
+  .home-sprint .container .content {
+    width: 100%;
+  }
+}
 .home-sprint .container .content.centered {
   align-items: center;
+  text-align: center;
 }
 .home-sprint .container .content .featured-image-container {
   padding: 0;
@@ -2896,7 +2946,12 @@ ul.linear-list li {
 .home-sprint .container .content .featured-image-container img {
   box-shadow: 0px 4px 32px rgba(30, 144, 255, 0.5);
   border-radius: 10px;
-  height: 250px;
+  max-height: 250px;
+}
+@media only screen and (min-width: 769px) {
+  .home-sprint .container .content .featured-image-container img {
+    height: 250px;
+  }
 }
 .home-sprint .container .content h2 {
   font-size: 3em;
