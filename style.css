@@ -2954,6 +2954,55 @@ ul.linear-list li {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.sprint-footer {
+  padding: 3em 0;
+  position: relative;
+}
+.sprint-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 50%;
+  padding: 3em 0 0 0;
+}
+.sprint-footer .footer-content.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sprint-footer .footer-content a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.sprint-footer .footer-content a span {
+  line-height: 60px;
+  margin: 0 15px;
+  font-size: large;
+  color: #444444;
+}
+.sprint-footer .footer-content a img {
+  height: 60px;
+  margin: 0;
+}
+.sprint-footer .footer-content .left {
+  margin-right: auto;
+}
+.sprint-footer .footer-content .left a span {
+  order: 2;
+}
+.sprint-footer .footer-content .left a img {
+  transform: rotate(180deg);
+  order: 1;
+}
+.sprint-footer .footer-content .right {
+  margin-left: auto;
+}
+.sprint-footer .footer-content .right a span {
+  order: 1;
+}
+.sprint-footer .footer-content .right a img {
+  order: 2;
+}
+
 .sprint-section {
   padding: 6em 0;
   position: relative;
