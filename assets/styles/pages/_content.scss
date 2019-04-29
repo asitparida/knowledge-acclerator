@@ -39,8 +39,13 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        max-width: 50%;
         padding: 3em 0 0 0;
+        @include respond-to-except-mobile {
+            max-width: 50%;
+        }
+        @include respond-to-mobile {
+            padding:  0 30px;
+        }
         &.border-top {
             border-top: 1px solid rgba(0, 0, 0, 0.10);
         }
@@ -53,10 +58,16 @@
                 margin: 0 15px;
                 font-size: large;
                 color: #444444;
+                @include respond-to-mobile {
+                    line-height: 24px;
+                }
             }
             img {
                 height: 60px;
                 margin: 0;
+                @include respond-to-mobile {
+                    height: 24px;
+                }
             }
         }
 
@@ -143,12 +154,21 @@
     padding: 6em 0;
     position: relative;
 
+    @include respond-to-mobile {
+        padding: 30px 0;
+    }
+
     &:nth-of-type(2n + 1):not(.override-bg) {
         background-color: #f1f8ff;
     }
 
     .container {
-        max-width: 50%;
+        @include respond-to-except-mobile {
+            max-width: 50%;
+        }
+        @include respond-to-mobile {
+            padding: 0 30px;
+        }
 
         img {
             margin: 1em auto;

@@ -22,7 +22,9 @@
 
 .home-sprint {
     &:not(.auto-height) {
-        min-height: 500px;
+        @include respond-to-except-mobile {
+            min-height: 500px;
+        }
     }
 
     display: flex;
