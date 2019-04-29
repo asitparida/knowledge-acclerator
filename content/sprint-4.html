@@ -22,6 +22,29 @@
             background-image: url(../assets/images/kickoff/IMG_1828-min.jpg);
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elem = document.getElementById('solution-sketches-container');
+            if (elem) {
+                let width = 960;
+                let height = 569;
+                if (window.innerWidth < 480) {
+                    width = 380; height = 200;
+                } else if (window.innerWidth < 960) {
+                    width = 480; height = 299;
+                }
+                const iframeHTML =
+                `
+                <h3>Solution Sketches</h3>
+                <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vTwzyPW_UOv6baN7-1O4mCsKm7q8seyoQ8QBUctA1gKIRDQFTF8epdcv4SNW5xUlZAxMfl-IKNaZC4s/embed?start=false&loop=true&delayms=3000"
+                frameborder="0" width="${width}" height="${height}" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
+                `;
+                elem.innerHTML = iframeHTML;
+            }
+        })
+    </script>
 </head>
 
 <body>
@@ -74,12 +97,7 @@
         </div>
     </section>
     <section class="sprint-section override-bg">
-        <div class="full-size-image-container">
-            <h3>Solution Sketches</h3>
-            <iframe
-                src="https://docs.google.com/presentation/d/e/2PACX-1vTwzyPW_UOv6baN7-1O4mCsKm7q8seyoQ8QBUctA1gKIRDQFTF8epdcv4SNW5xUlZAxMfl-IKNaZC4s/embed?start=false&loop=true&delayms=3000"
-                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
-                webkitallowfullscreen="true"></iframe>
+        <div class="full-size-image-container" id="solution-sketches-container">
         </div>
     </section>
     <section class="sprint-section">

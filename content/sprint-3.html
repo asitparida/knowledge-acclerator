@@ -22,6 +22,29 @@
             background-image: url(../assets/images/kickoff/IMG_1828-min.jpg);
         }
     </style>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const elem = document.getElementById('storyboards-container');
+                if (elem) {
+                    let width = 960;
+                    let height = 569;
+                    if (window.innerWidth < 480) {
+                        width = 380; height = 200;
+                    } else if (window.innerWidth < 960) {
+                        width = 480; height = 299;
+                    }
+                    const iframeHTML =
+                    `
+                    <h3>Storyboads</h3>
+                    <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vTL6fiyEoLdjqt1t3gZZZEyvYK06CaKP1s3Fy2tqmPOCtQeMTSJpPHm1cSkJajs7kOx5jl5Wld8zbqG/embed?start=false&loop=true&delayms=3000"
+                frameborder="0"width="${width}" height="${height}" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
+                    `;
+                    elem.innerHTML = iframeHTML;
+                }
+            })
+        </script>
 </head>
 
 <body>
@@ -113,13 +136,7 @@
         </div>
     </section>
     <section class="sprint-section override-bg">
-        <div class="full-size-image-container">
-            <h3>Storyboads</h3>
-            <iframe
-                src="https://docs.google.com/presentation/d/e/2PACX-1vTL6fiyEoLdjqt1t3gZZZEyvYK06CaKP1s3Fy2tqmPOCtQeMTSJpPHm1cSkJajs7kOx5jl5Wld8zbqG/embed?start=false&loop=true&delayms=3000"
-                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
-                webkitallowfullscreen="true"></iframe>
-        </div>
+        <div class="full-size-image-container" id="storyboards-container"></div>
     </section>
     <section class="sprint-section override-bg">
         <div class="container">
