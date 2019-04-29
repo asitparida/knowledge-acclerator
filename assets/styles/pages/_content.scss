@@ -18,6 +18,13 @@
             border-radius: 5px;
             box-shadow: 0px 2px 4px rgba( 0,0,0, 0.30)
         }
+        ul {
+            padding-inline-start: 30px;
+            li {
+                font-size: 1.35em;
+                line-height: 1.75em;
+            }
+        }
     }
 
     h1 {
@@ -33,6 +40,11 @@
         font-size: 1.35em;
         line-height: 1.75em;
         margin: 1.5em 0;
+        &.caption {
+            margin-top: 0;
+            font-style: italic;
+            font-size: 1em;
+        }
     }
     blockquote {
         margin: 2em 0 1em 0;

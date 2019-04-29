@@ -2930,6 +2930,13 @@ ul.linear-list li {
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
+.sprint-section .container ul {
+  padding-inline-start: 30px;
+}
+.sprint-section .container ul li {
+  font-size: 1.35em;
+  line-height: 1.75em;
+}
 .sprint-section h1 {
   margin-bottom: 1em;
   color: #444444;
@@ -2941,6 +2948,11 @@ ul.linear-list li {
   font-size: 1.35em;
   line-height: 1.75em;
   margin: 1.5em 0;
+}
+.sprint-section p.caption {
+  margin-top: 0;
+  font-style: italic;
+  font-size: 1em;
 }
 .sprint-section blockquote {
   margin: 2em 0 1em 0;
