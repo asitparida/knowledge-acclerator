@@ -2956,6 +2956,11 @@ ul.linear-list li {
 .home-sprint .container .content h2 {
   font-size: 3em;
 }
+@media only screen and (max-width: 768px) {
+  .home-sprint .container .content h2 {
+    font-size: 2em;
+  }
+}
 .home-sprint .container .content h2 span {
   font-size: x-large;
   color: dodgerblue;
@@ -2963,10 +2968,23 @@ ul.linear-list li {
   display: block;
   margin-right: 0px;
 }
+@media only screen and (max-width: 768px) {
+  .home-sprint .container .content h2 span {
+    font-size: large;
+    padding-top: 1em;
+  }
+}
 .home-sprint .container .content p {
   font-size: 1.35em;
   line-height: 1.75em;
   margin: 0em 0 2em 0;
+}
+@media only screen and (max-width: 768px) {
+  .home-sprint .container .content p {
+    font-size: 1.15em;
+    line-height: 1.15em;
+    margin: 0.5em 0 1.5em 0;
+  }
 }
 .home-sprint .container .content a {
   display: inline-block;
@@ -3063,6 +3081,11 @@ ul.linear-list li {
   padding: 6em 0;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .team-section {
+    padding: 3em 0;
+  }
+}
 .team-section .profiles {
   display: flex;
   justify-content: center;
@@ -3075,6 +3098,11 @@ ul.linear-list li {
   width: 300px;
   margin: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .team-section .profiles .profile-info {
+    margin: 15px 0;
+  }
+}
 .team-section .profiles .profile-info .profile-img {
   display: flex;
   justify-content: center;
@@ -3083,11 +3111,21 @@ ul.linear-list li {
 .team-section .profiles .profile-info .profile-img img {
   max-width: 250px;
 }
+@media only screen and (max-width: 768px) {
+  .team-section .profiles .profile-info .profile-img img {
+    width: 180px;
+  }
+}
 .team-section .profiles .profile-info .profile-description {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 2em 0 4em 0;
+}
+@media only screen and (max-width: 768px) {
+  .team-section .profiles .profile-info .profile-description {
+    margin: 1em 0 2em 0;
+  }
 }
 .team-section .profiles .profile-info .profile-description label {
   font-size: large;

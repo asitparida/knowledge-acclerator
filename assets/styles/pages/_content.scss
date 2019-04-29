@@ -95,6 +95,9 @@
 .team-section {
     padding: 6em 0;
     position: relative;
+    @include respond-to-mobile {
+        padding: 3em 0;
+    }
     .profiles {
         display: flex;
         justify-content: center;
@@ -105,12 +108,18 @@
             flex-direction: column;
             width: 300px;
             margin: 30px;
+            @include respond-to-mobile {
+                margin: 15px 0;
+            }
             .profile-img {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 img {
                     max-width: 250px;
+                    @include respond-to-mobile {
+                        width: 180px;
+                    }
                 }
             }
             .profile-description {
@@ -118,6 +127,9 @@
                 align-items: center;
                 flex-direction: column;
                 margin: 2em 0 4em 0;
+                @include respond-to-mobile {
+                    margin: 1em 0 2em 0;
+                }
                 label {
                     font-size: large;
                 }
