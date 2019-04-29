@@ -92,6 +92,41 @@
     }
 }
 
+.team-section {
+    padding: 6em 0;
+    position: relative;
+    .profiles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 30px;
+            .profile-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    max-width: 250px;
+                }
+            }
+            .profile-description {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 2em 0 4em 0;
+                label {
+                    font-size: large;
+                }
+                p {}
+            }
+        }
+    }
+}
+
 .sprint-section {
     padding: 6em 0;
     position: relative;
