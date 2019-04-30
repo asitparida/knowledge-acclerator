@@ -3247,6 +3247,7 @@ ul.linear-list li {
   text-decoration: none;
 }
 .sprint-section p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35em;
   line-height: 1.75em;
   margin: 1.5em 0;
@@ -3264,6 +3265,7 @@ ul.linear-list li {
   font-size: 1em;
 }
 .sprint-section p blockquote p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35em;
   margin: 0;
 }
@@ -3277,6 +3279,7 @@ ul.linear-list li {
   font-size: inherit;
 }
 .sprint-section blockquote p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35em;
   margin: 0;
 }

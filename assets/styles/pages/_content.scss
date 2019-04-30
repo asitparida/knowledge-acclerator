@@ -224,6 +224,7 @@
     }
 
     p {
+        font-family: 'Open Sans', sans-serif;
         font-size: 1.35em;
         line-height: 1.75em;
         margin: 1.5em 0;
@@ -242,6 +243,7 @@
         blockquote {
 
             p {
+                font-family: 'Open Sans', sans-serif;
                 font-size: 1.35em;
                 margin: 0;
                 @include respond-to-mobile {
@@ -256,6 +258,7 @@
         font-size: inherit;
 
         p {
+            font-family: 'Open Sans', sans-serif;
             font-size: 1.35em;
             margin: 0;
             @include respond-to-mobile {
