@@ -185,6 +185,7 @@
             padding-inline-start: 30px;
 
             li {
+                font-family: 'Open Sans', sans-serif;
                 font-size: 1.35em;
                 line-height: 1.75em;
                 @include respond-to-mobile {

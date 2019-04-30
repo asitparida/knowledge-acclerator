@@ -3207,6 +3207,7 @@ ul.linear-list li {
   padding-inline-start: 30px;
 }
 .sprint-section .container ul li {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.35em;
   line-height: 1.75em;
 }
