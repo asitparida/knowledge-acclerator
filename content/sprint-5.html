@@ -22,6 +22,26 @@
             background-image: url(../assets/images/kickoff/IMG_1828-min.jpg);
         }
     </style>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const elem = document.getElementById('prototype-container');
+                if (elem) {
+                    let width = 960;
+                    let height = 569;
+                    if (window.innerWidth < 480) {
+                        width = 380; height = 200;
+                    } else if (window.innerWidth < 960) {
+                        width = 480; height = 299;
+                    }
+                    const iframeHTML =
+                    `
+                    <h3>Prototype</h3>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsNymR438YfBpjkvcuZ9ZakKf6CZTgUPPM3W4Rc0hCdiUEs7FcTY2GKpaQfMk3XqZ6wNtTSEuG-IzK/embed?start=false&loop=true&delayms=3000" frameborder="0" width="${width}" height="${height}" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    `;
+                    elem.innerHTML = iframeHTML;
+                }
+            })
+        </script>
 </head>
 
 <body>
@@ -42,81 +62,76 @@
     <section class="sprint-section">
         <div class="container">
             <h1>Goal</h1>
-            <p>Validate how users synthesize and act on collected information through evaluating features and solutions
-            </p>
+            <p>Synthesize insights from research and ideation phase into design guidelines and start to prototype what
+                the
+                ideal tool for creators would look like. Create more targeted prototypes for the passionate creators and
+                create
+                design directions that can also inform us for spring capstone presentation.</p>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
             <h1>Deliverable</h1>
-            <h3>Solution Sketches</h3>
-            <p>The team felt the need to narrow further and move into tangible concepts that could evoke more meaningful
-                and directed feedback appropriate to the stage of the process. The ideas tested until now provided
-                insightful discussions into the mindset of what people valued as helpful when researching online.
+            <h3>Scenario of usage, prototypes, brief user testing, template of website and spring presentation</h3>
+            <p>Having a specific scenario/user would inform us the design directions and solid opportunity to design for
+                the target
+                user. By creating a story, we can build empathy with external stakeholders as well. Also, early stage
+                prototype
+                would guide our first step of transforming the ideas into forms. It can provide early feedback that
+                saves time and
+                cost by validating our assumptions and establishing common understanding of the design guidelines and
+                intent
             </p>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
             <h1>Process</h1>
-            <p>The sprint started with our synthesis of the feedback from our storyboarding sessions. It was clear that
-                our participants preferred a form of visual aid over any text-heavy solution with some form of agency.
-                The team noted that the arcs of storyboards reflected broad concepts and hence, we broke down the same
-                into insights. We posited features from these insights and bucketed them into must-haves and
-                good-to-haves. The next step was to combine traits into comprehensive solution sketches. The level of
-                data fidelity was also increased in the illustrations so that we could test more tangible solutions.</p>
-            <p>The ideas in the new comprehensive solution-sketches ranged from cards containing definitions to journey
-                map and from talking to a friend to reaching out to experts. We speed-dated the sketches with 10-12
-                participants iteratively. The insights from these sessions pointed to how structures and definitions
-                would undoubtedly help people better translate their mental models. People liked the idea of being able
-                to compare product specs across different platforms. Having scaffolding supports resonated with people
-                who had trouble looking where to start.</p>
+            <p>Before starting the prototype, we first divided up the potential user groups into contributors, fans, and
+                novice
+                users to clearly address their differences in their needs and use cases. We listed out the potential
+                features that
+                can help best address the user needs and voted on the features that would best align with our research
+                findings.
+                After discussion, our team decided to pursue and test further on providing templates and sharing the
+                created them
+                within the contributors’ online community.</p>
+            <p>Based on the given features, we created a specific scenario of an active contributor on Youtube who want
+                to to organize cosmetic products and share the artifacts. This allowed us to reveal the specific
+                features with rationale and gave us more insights into how we would visualize our solutions.
+                Likewise, we transformed our research insights into pain points and needs of the contributors, and also from pain points to high-level design guidelines:
+                <ul>
+                    <li>Easy integration with the already existing platform </li>
+                    <li>Interactive transitioning between foraggin and organizing </li>
+                    <li>Easy sharing of both information and template</li>
+                </ul>
+            </p>
+            <p>Early stage prototype would guide our first step of transforming the ideas into forms. We also wanted to intentionally incorporate our assumptions into our design as a way to test our assumptions and clarify with the target user in a more realistic, feasible way.  After low-fi prototyping, we created list of questions for each features and pages to test with the user. For user testing, we first observed how people are already researching to create artifacts, and then went through our prototype to get both high-level and detailed feedback. On the other hand, the user testing findings solidified our potential target user and further questions to validate throughout prototyping.</p>
         </div>
     </section>
     <section class="sprint-section override-bg">
-        <div class="full-size-image-container">
-            <h3>Solution Sketches</h3>
-            <iframe
-                src="https://docs.google.com/presentation/d/e/2PACX-1vTwzyPW_UOv6baN7-1O4mCsKm7q8seyoQ8QBUctA1gKIRDQFTF8epdcv4SNW5xUlZAxMfl-IKNaZC4s/embed?start=false&loop=true&delayms=3000"
-                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
-                webkitallowfullscreen="true"></iframe>
+        <div class="full-size-image-container" id="prototype-container">
+            <h3>Prototype</h3>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsNymR438YfBpjkvcuZ9ZakKf6CZTgUPPM3W4Rc0hCdiUEs7FcTY2GKpaQfMk3XqZ6wNtTSEuG-IzK/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
-            <p>Until this, we had stressed the idea of focussing on consumers in the entirety of the Spring semester
-                with the plan being to figure out what artifacts people wanted first and then focus on how to get our
-                motivated creators into creating content in those forms. We had structured our process to answer the
-                following in sequence - </p>
+            <p>We started to draft our spring presentation. Through faculty feedback and internal discussion, we formatted for each sprint in a form of: design questions/challenge, process, and insights. We also tried to weave stories to make the abstract concepts and research process into a more digestible presentation. As part of the spring capstone presentation, we wanted to present a low-fi prototype as an open-ended solution that we are presenting our final challenge, but using low-fi as a way to further to test and iterate in the summer. </p>
+            <p>Moving forward, we want to further investigate our user and test our prototype. The two high-level questions we have are:</p>
             <ul>
-                <li>What types of artifacts do people want to consume in the space of online shopping sensemaking?</li>
-                <li>How do we guide creators to build the right artifacts for consumption?</li>
+                <li>How can we design a product that aligns with the current behavior of the contributor?</li>
+                <li>How might we incorporate collaborative elements?</li>
             </ul>
-            <p>Based on the insights we got from the user testing sessions, the team felt the need to look for a
-                different group of users who would have intrinsic motivation to collect and synthesize information in a
-                structured way and create and share content among them and others. We knew that the essence of
-                sensemaking had the most relevance in the domain of academic journal research. So we looked to find a
-                similar group of people who were equally passionate about foraging-contextualizing-synthesizing.</p>
-            <p>The deliberations led us to reframe our user groups as passion communities. Engaged in focused activities
-                like comic book fandom, environment-friendly activities, water conservation, hiking, fashion, and makeup
-                bloggers, etc., these groups consist of individuals who share a common interest. This drives their
-                strong and sustained motivation for content creation and consumption. In fact, for them, these are not
-                two distinct activities but the same. We focused on the current active creators - Bloggers, YouTubers,
-                Quora/Reddit active contributors. We conducted four user interviews with active contributors to Zhihu (a
-                Chinese site similar to Quora) and learned about their current behaviors. </p>
-            <p>With this refined target user group, we wanted to understand their habits around collecting information,
-                thought processes when organizing them, and the tools they currently use.
-            </p>
+            <p>In order to answer these key questions, we need to conduct further focused research, user testing with our prototypes, and iterate with contributors. Ultimately, our ideal product by the end of the summer is to create a generalizable tool that can support contributors in multiple online communities.</p>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
             <h1>Reflection</h1>
             <ul>
-                <li>Creators do not necessarily follow the seeking - collecting - summarizing process for their
-                    sensemaking process, at least, not in that specific order. </li>
-                <li>Capturing fleeting thoughts and fragmented information is essential as specifics bit of information
-                    can become relevant later on.</li>
+                <li>Transforming pain points into design requires validating assumptions </li>
+                <li>As next steps, we want to test our hypothesis and ask questions such as “How might we better align our service with the current behavior and mental model of the contributors?” </li>
             </ul>
         </div>
     </section>
