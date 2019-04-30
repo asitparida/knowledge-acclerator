@@ -3230,11 +3230,21 @@ ul.linear-list li {
 .sprint-section h3 {
   margin-bottom: 0.5em;
   font-size: x-large;
+  line-height: normal;
 }
 @media only screen and (max-width: 768px) {
   .sprint-section h3 {
     font-size: medium;
   }
+}
+.sprint-section a.pdf-btn {
+  margin: 3em 0 0 0;
+  line-height: 48px;
+  padding: 0 15px;
+  border: 2px solid #444444;
+  text-transform: uppercase;
+  color: #444444;
+  text-decoration: none;
 }
 .sprint-section p {
   font-size: 1.35em;
