@@ -30,7 +30,7 @@ function showNavigationBar(force) {
 function initializeScrollListener() {
     let lastScrollPosition = 0;
     document.addEventListener('scroll', () => {
-        if (lastScrollPosition < window.scrollY) {
+        if (lastScrollPosition < window.scrollY  && (window.scrollY > (window.innerHeight * 0.33))) {
             !navBarHidden && hideNavigationBar();
         } else {
             navBarHidden && showNavigationBar();
