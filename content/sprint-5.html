@@ -23,25 +23,25 @@
         }
     </style>
     <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const elem = document.getElementById('prototype-container');
-                if (elem) {
-                    let width = 960;
-                    let height = 569;
-                    if (window.innerWidth < 480) {
-                        width = 380; height = 200;
-                    } else if (window.innerWidth < 960) {
-                        width = 480; height = 299;
-                    }
-                    const iframeHTML =
+        document.addEventListener('DOMContentLoaded', () => {
+            const elem = document.getElementById('prototype-container');
+            if (elem) {
+                let width = 960;
+                let height = 569;
+                if (window.innerWidth < 480) {
+                    width = 380; height = 200;
+                } else if (window.innerWidth < 960) {
+                    width = 480; height = 299;
+                }
+                const iframeHTML =
                     `
                     <h3>Prototype</h3>
             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsNymR438YfBpjkvcuZ9ZakKf6CZTgUPPM3W4Rc0hCdiUEs7FcTY2GKpaQfMk3XqZ6wNtTSEuG-IzK/embed?start=false&loop=true&delayms=3000" frameborder="0" width="${width}" height="${height}" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                     `;
-                    elem.innerHTML = iframeHTML;
-                }
-            })
-        </script>
+                elem.innerHTML = iframeHTML;
+            }
+        })
+    </script>
 </head>
 
 <body>
@@ -50,7 +50,9 @@
             <li class="navigation-bar-item"><a href="../index.html">Home</a></li>
             <li class="navigation-bar-item"><a href="./problem-statement.html">Problem</a></li>
             <li class="navigation-bar-item"><a href="./team.html">Team</a></li>
-            <li class="navigation-bar-item"><a href="https://medium.com/@yifanfu_7696/team-athena-production-diary-48b8506df805" target="_blank">Blog</a></li>
+            <li class="navigation-bar-item"><a
+                    href="https://medium.com/@yifanfu_7696/team-athena-production-diary-48b8506df805"
+                    target="_blank">Blog</a></li>
         </ul>
     </div>
     <header class="hero-area">
@@ -63,20 +65,21 @@
     <section class="sprint-section">
         <div class="container">
             <h1>Goal</h1>
-            <p>Synthesize insights from research and ideation phase into design guidelines and start to prototype what the ideal tool for creators would look like</p>
+            <p>Synthesize insights from research and ideation phase into design guidelines and start to prototype what
+                the ideal tool for creators would look like</p>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
             <h1>Deliverable</h1>
             <h3>Low-fidelity prototype</h3>
-            <p>Having a specific scenario/user would inform us the design directions and solid opportunity to design for
+            <p>Having a specific scenario/user would inform us of the design directions and solid opportunity to design for
                 the target
-                user. By creating a story, we can build empathy with external stakeholders as well. Also, early stage
+                user. By creating a story, we can build empathy with external stakeholders as well. Also, an early stage
                 prototype
                 would guide our first step of transforming the ideas into forms. It can provide early feedback that
                 saves time and
-                cost by validating our assumptions and establishing common understanding of the design guidelines and
+                cost by validating our assumptions and establishing a common understanding of the design guidelines and
                 intent
             </p>
         </div>
@@ -84,51 +87,70 @@
     <section class="sprint-section">
         <div class="container">
             <h1>Process</h1>
-            <p>Before starting the prototype, we first divided up the potential user groups into contributors, fans, and
+            <p>Before starting the prototype, we first divided up the possible user groups into contributors, fans, and
                 novice
                 users to clearly address their differences in their needs and use cases. We listed out the potential
                 features that
-                can help best address the user needs and voted on the features that would best align with our research
+                can help address the user needs and voted on the features that would best align with our research
                 findings.
                 After discussion, our team decided to pursue and test further on providing templates and sharing the
                 created them
                 within the contributors’ online community.</p>
-            <p>Based on the given features, we created a specific scenario of an active contributor on Youtube who want
-                to to organize cosmetic products and share the artifacts. This allowed us to reveal the specific
+            <p>Based on the given features, we created a specific scenario of an active contributor on Youtube who wants
+                to organize cosmetic products and share the artifacts. This allowed us to reveal the particular
                 features with rationale and gave us more insights into how we would visualize our solutions.
-                Likewise, we transformed our research insights into pain points and needs of the contributors, and also from pain points to high-level design guidelines:
+                Likewise, we transformed our research insights into pain points and needs of the contributors, and also
+                from pain points to high-level design guidelines:
                 <ul>
                     <li>Easy integration with the already existing platform </li>
-                    <li>Interactive transitioning between foraggin and organizing </li>
+                    <li>Interactive transitioning between foraging and organizing </li>
                     <li>Easy sharing of both information and template</li>
                 </ul>
             </p>
-            <p>Early stage prototype would guide our first step of transforming the ideas into forms. We also wanted to intentionally incorporate our assumptions into our design as a way to test our assumptions and clarify with the target user in a more realistic, feasible way.  After low-fi prototyping, we created list of questions for each features and pages to test with the user. For user testing, we first observed how people are already researching to create artifacts, and then went through our prototype to get both high-level and detailed feedback. On the other hand, the user testing findings solidified our potential target user and further questions to validate throughout prototyping.</p>
+            <p>Early stage prototype would guide our first step of transforming the ideas into forms. We also wanted to
+                intentionally incorporate our assumptions into our design as a way to test our hypotheses and clarify
+                with the target user in a more realistic, feasible way. After low-fi prototyping, we created a list of
+                questions for each feature and pages to test with the user. For user testing, we first observed how
+                people are already researching to create artifacts, and then went through our prototype to get both
+                high-level and detailed feedback. On the other hand, the user testing findings solidified our potential
+                target user and further questions to validate throughout prototyping.</p>
         </div>
     </section>
     <section class="sprint-section override-bg">
         <div class="full-size-image-container" id="prototype-container">
             <h3>Prototype</h3>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsNymR438YfBpjkvcuZ9ZakKf6CZTgUPPM3W4Rc0hCdiUEs7FcTY2GKpaQfMk3XqZ6wNtTSEuG-IzK/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vQsNymR438YfBpjkvcuZ9ZakKf6CZTgUPPM3W4Rc0hCdiUEs7FcTY2GKpaQfMk3XqZ6wNtTSEuG-IzK/embed?start=false&loop=true&delayms=3000"
+                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
-            <p>We started to draft our spring presentation. Through faculty feedback and internal discussion, we formatted for each sprint in a form of: design questions/challenge, process, and insights. We also tried to weave stories to make the abstract concepts and research process into a more digestible presentation. As part of the spring capstone presentation, we wanted to present a low-fi prototype as an open-ended solution that we are presenting our final challenge, but using low-fi as a way to further to test and iterate in the summer. </p>
-            <p>Moving forward, we want to further investigate our user and test our prototype. The two high-level questions we have are:</p>
+            <p>We started to draft our spring presentation. Through faculty feedback and internal discussion, we
+                formatted for each sprint in the form of: design questions/challenge, process, and insights. We also tried
+                to weave stories to make the abstract concepts and research process into a more digestible presentation.
+                As part of the spring capstone presentation, we wanted to present a low-fi prototype as an open-ended
+                solution that we would present as our final challenge but using low-fi as a way to further to test and
+                iterate in the summer. </p>
+            <p>Moving forward, we want to further investigate our user and test our prototype. The two high-level
+                questions we have are:</p>
             <ul>
                 <li>How can we design a product that aligns with the current behavior of the contributor?</li>
                 <li>How might we incorporate collaborative elements?</li>
             </ul>
-            <p>In order to answer these key questions, we need to conduct further focused research, user testing with our prototypes, and iterate with contributors. Ultimately, our ideal product by the end of the summer is to create a generalizable tool that can support contributors in multiple online communities.</p>
+            <p>To answer these key questions, we need to conduct further focused research, user testing with
+                our prototypes, and iterate with contributors. Ultimately, our ideal product by the end of the summer is
+                to create a generalizable tool that can support contributors in multiple online communities.</p>
         </div>
     </section>
     <section class="sprint-section">
         <div class="container">
             <h1>Reflection</h1>
             <ul>
-                <li>Transforming pain points into design requires validating assumptions </li>
-                <li>As next steps, we want to test our hypothesis and ask questions such as “How might we better align our service with the current behavior and mental model of the contributors?” </li>
+                <li>Transforming pain points into a design requires validating assumptions </li>
+                <li>As next steps, we want to test our hypothesis and ask questions such as “How might we better align
+                    our service with the current behavior and mental model of the contributors?” </li>
             </ul>
         </div>
     </section>
